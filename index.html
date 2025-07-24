@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple CRUD App</title>
+  <style>
+    body {
+      font-family: Arial;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      margin-top: 20px;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    input {
+      padding: 6px;
+      margin: 5px 0;
+    }
+  </style>  
+</head>
+<body>
+   
+  <h2>CRUD App</h2>
+  <input type="text" id="name" placeholder="Enter item name">
+  <input type="number" id="price" placeholder="Enter price">
+  <button onclick="addOrUpdateItem()">Save</button>
+  <input type="hidden" id="editingIndex" value="">
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="itemTable">
+    </tbody>
+  </table>
+  <script src="script.js"></script>
+</body>
+</html>
